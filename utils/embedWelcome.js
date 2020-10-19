@@ -18,4 +18,4 @@ const embedWelcome = new Discord.MessageEmbed()
         }
     );
 
-exports.embedWelcome;
+exports.embedWelcome = embedWelcome;

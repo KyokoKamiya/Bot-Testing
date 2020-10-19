@@ -10,4 +10,4 @@ function embedError(errorMessage) {
     return cunt;
 }
 
-exports.embedError;
+exports.embedError = embedError;

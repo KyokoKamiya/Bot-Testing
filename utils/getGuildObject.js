@@ -5,4 +5,4 @@ function getGuildObject(guildId) {
     return guildObject;
 }
 
-exports.getGuildObject;
+exports.getGuildObject = getGuildObject;

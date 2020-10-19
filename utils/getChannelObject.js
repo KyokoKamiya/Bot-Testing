@@ -5,4 +5,4 @@ function getChannelObject(channelId, guildObject) {
     return channelObject;
 }
 
-exports.getChannelObject;
+exports.getChannelObject = getChannelObject;
