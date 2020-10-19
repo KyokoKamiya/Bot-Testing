@@ -1,5 +1,4 @@
-const config = {
+let config = {
     version: "0.1",
-    whatdowelike: "cum",
     prefix: "?",
 };
