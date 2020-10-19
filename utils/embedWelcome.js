@@ -17,3 +17,5 @@ const embedWelcome = new Discord.MessageEmbed()
             inline: true,
         }
     );
+
+exports.embedWelcome;

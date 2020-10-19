@@ -9,3 +9,5 @@ function embedError(errorMessage) {
 
     return cunt;
 }
+
+exports.embedError;
