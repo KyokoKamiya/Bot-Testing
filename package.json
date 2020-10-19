@@ -1,12 +1,22 @@
 {
-  "name": "Testing",
+  "name": "testing",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KyokoKamiya/CUM.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KyokoKamiya/CUM/issues"
+  },
+  "homepage": "https://github.com/KyokoKamiya/CUM#readme",
+  "dependencies": {
+    "discord.js": "^12.3.1"
+  }
 }
