@@ -8,7 +8,7 @@ const embedWelcome = new Discord.MessageEmbed()
     .setThumbnail("https://i.imgur.com/l73ruau.png")
     .addFields(
         {
-            name: "To gain access to the discord server we need a bit of information about you.",
+            name: "In order to keep the discord organized and help people identify eachother, we have everyones name set to their in-game name",
             value: "\u200b",
         },
         {
