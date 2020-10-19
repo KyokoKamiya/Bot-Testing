@@ -1,4 +1,3 @@
-var { client } = require("../index.js");
 const Discord = require("discord.js");
 
 const embedWelcome = new Discord.MessageEmbed()

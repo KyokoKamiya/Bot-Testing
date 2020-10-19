@@ -1,4 +1,4 @@
-const embedWelcome = require("../utils/embedWelcome");
+const { embedWelcome } = require("../utils/embedWelcome");
 
 function handleGuildMemberAdd(member) {
     if (member.bot) {
@@ -7,3 +7,5 @@ function handleGuildMemberAdd(member) {
     }
     member.send(embedWelcome);
 }
+
+exports.handleGuildMemberAdd = handleGuildMemberAdd;
