@@ -1,4 +1,4 @@
-var { client } = require("./index.js");
+var { client } = require("../index.js");
 
 function embedError(errorMessage) {
     let cunt = new Discord.MessageEmbed()

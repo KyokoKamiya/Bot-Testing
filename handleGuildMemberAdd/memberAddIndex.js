@@ -1,4 +1,5 @@
 var { client } = require("../index");
+console.log(client);
 const embedWelcome = require("../utils/embedWelcome");
 
 function handleGuildMemberAdd(member) {

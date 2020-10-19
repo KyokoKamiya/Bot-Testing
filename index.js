@@ -1,11 +1,12 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const config = require("./config");
+const { config } = require("./config");
 const handleGuildMemberAdd = require("./handleGuildMemberAdd/memberAddIndex");
-module.exports = { client };
+exports.client = client;
 
 client.on("ready", () => {
     console.log(`Logged in as ${client.user.tag} on version ${config.version}!`);
+    console.error(config);
 });
 
 client.on("message", (msg) => {});
