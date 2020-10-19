@@ -1,5 +1,8 @@
 var { client } = require("./index.js");
 
 function getGuildObject(guildId) {
-    client.guilds.cache.get(guildId);
+    let guildObject = client.guilds.cache.get(guildId);
+    return guildObject;
 }
+
+exports.getGuildObject;
