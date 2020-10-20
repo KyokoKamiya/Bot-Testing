@@ -7,15 +7,14 @@ function handleGuildMemberAdd(member, client) {
         return;
     }
     console.log(`Attempting to send Welcome message to ${member.displayName}`);
-    try {
-        member.send(embedWelcome).catch((err) => {
+
+    member
+        .send(embedWelcome)
+        .catch((err) => {
             console.log(`Could not send Welcome message to ${member.displayName}, calling handleException`);
             handleException(member, client);
-            return;
-        });
-    } finally {
-        console.log("handleGuildMemberAdd Complete");
-    }
+        })
+        .then(() => console.log("handleGuildMemberAdd Complete"));
 }
 
 exports.handleGuildMemberAdd = handleGuildMemberAdd;

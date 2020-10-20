@@ -18,4 +18,4 @@ client.on("guildMemberAdd", (member) => {
 
 client.login(process.env.TESTTOKEN);
 
-// send a message when a person joins
+// IGN regex ^[A-Z]\w*'*\w*\s[A-Z]\w*'*\w*
