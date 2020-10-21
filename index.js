@@ -1,3 +1,4 @@
+require("dotenv").config();
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const { config } = require("./config");
@@ -5,11 +6,10 @@ const { handleGuildMemberAdd } = require("./Modules/handleGuildMemberAdd/memberA
 
 client.on("ready", () => {
     console.log(`Logged in as ${client.user.tag} on version ${config.version}!`);
-    console.error(config);
 });
 
 client.on("message", (msg) => {
-    if (msg.author.bot || msg.system) return;
+    msg.channel.send(msg.author.nickname);
 });
 
 client.on("guildMemberAdd", (member) => {
@@ -18,4 +18,4 @@ client.on("guildMemberAdd", (member) => {
 
 client.login(process.env.TESTTOKEN);
 
-// IGN regex ^[A-Z]\w*'*\w*\s[A-Z]\w*'*\w*
+// IGN regex /^[A-Z]\w*'*\w*\s[A-Z]\w*'*\w*/
