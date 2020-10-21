@@ -8,9 +8,7 @@ client.on("ready", () => {
     console.log(`Logged in as ${client.user.tag} on version ${config.version}!`);
 });
 
-client.on("message", (msg) => {
-    msg.channel.send(msg.author.nickname);
-});
+client.on("message", (msg) => {});
 
 client.on("guildMemberAdd", (member) => {
     handleGuildMemberAdd(member, client);
@@ -19,3 +17,24 @@ client.on("guildMemberAdd", (member) => {
 client.login(process.env.TESTTOKEN);
 
 // IGN regex /^[A-Z]\w*'*\w*\s[A-Z]\w*'*\w*/
+// if (msg.author.nickname === undefined) {
+//
+//}
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
