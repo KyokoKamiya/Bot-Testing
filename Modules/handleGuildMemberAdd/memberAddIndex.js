@@ -13,6 +13,7 @@ function handleGuildMemberAdd(member, client) {
         .catch((err) => {
             console.log(`Could not send Welcome message to ${member.displayName}, calling handleException`);
             handleException(member, client);
+            return "test1";
         })
         .then(() => console.log("handleGuildMemberAdd Complete"));
 }

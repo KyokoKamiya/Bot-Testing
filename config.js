@@ -1,6 +1,6 @@
 let config = {
     version: "0.1",
-    prefix: "?",
+    prefix: "e!",
 };
 
 exports.config = config;

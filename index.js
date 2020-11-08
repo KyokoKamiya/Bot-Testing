@@ -7,7 +7,7 @@ const { handleMessage } = require("./Modules/handleMessage/handleMessageIndex");
 
 client.on("ready", () => {
     console.log(`Logged in as ${client.user.tag} on version ${config.version}!`);
-    client.user.setPresence({ activity: { name: "Kyoko's commands.", type: "LISTENING" }, status: "online" });
+    client.user.setPresence({ activity: { name: "Kyoko", type: "LISTENING" }, status: "online" });
 });
 
 client.on("message", (msg) => {
